@@ -1,17 +1,24 @@
+import  { useState } from 'react';
 import './Navbar.css';
 
-function Navbar () {
-  return (
-    <nav className="navbar">
-      <ul>
-        <li>Images</li>
-        <li>The App</li>
-        <li>Buisness Solutions</li>
-        <li>About Us</li>
-      </ul>
-    </nav>
-  );
+const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
 
-}
+    const toggleNavbar = () => {
+        setIsOpen(!isOpen);
+    };
+
+    return (
+        <div className="navbar">
+            <button className="navbar-toggle" onClick={toggleNavbar}>☰</button>
+            <h1>Company Logo</h1>
+            <ul className={isOpen ? 'show' : ''}>
+                <li>The App</li>
+                <li>The Buisness Solution</li>
+                <li>About Us</li>
+            </ul>
+        </div>
+    );
+};
 
 export default Navbar;

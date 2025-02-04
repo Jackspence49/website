@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -24,11 +25,11 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <button className="navbar-toggle" onClick={toggleNavbar}>☰</button>
-            <h1>Company Logo</h1>
+            <h1><Link to="/">Company Logo</Link></h1> {/* Home page link */}
             <ul className={isOpen ? 'show' : ''}>
-                <li>The App</li>
-                <li>Business Solution</li>
-                <li>About Us</li>
+                <li><Link to="/theApp">The App</Link></li> {/* The App page link */}
+                <li><Link to="/businessSolution">Business Solution</Link></li> {/* Business Solution page link */}
+                <li><Link to="/aboutUs">About Us</Link></li> {/* About Us page link */}
             </ul>
         </div>
     );

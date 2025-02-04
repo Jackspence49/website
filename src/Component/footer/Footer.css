@@ -1,10 +1,22 @@
+:root {
+    --navbar-bg-color: #2c3e50; /* Dark blue background */
+    --navbar-text-color: #ecf0f1; /* Light grey text */
+    --navbar-hover-bg-color: #34495e; /* Slightly lighter dark blue */
+}
+
 .footer {
-    background-color: #fff;
-    color: #333;
-    padding: 20px;
+    background-color: var(--navbar-bg-color);
     text-align: center;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+h1 {
+    color: var(--navbar-text-color);
+}
+.copywrite {
+    color: var(--navbar-text-color);
+    font-size: 12px;
 }

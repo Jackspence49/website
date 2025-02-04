@@ -1,14 +1,14 @@
-import Footer from "./Component/footer/Footer"
-import Navbar from "./Component/Navbar/Navbar"
+import Footer from './Component/footer/Footer';
+import Navbar from './Component/Navbar/Navbar';
 
-function App() {
+const App = () => {
+    return (
+        <>
+            <Navbar />
+            <Footer />
 
-  return (
-    <>
-    <Navbar />
-    <Footer />
-    </>
-  )
-}
+        </>
+    );
+};
 
-export default App
+export default App;

@@ -1,0 +1,11 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --font-family: 'Roboto', sans-serif; /* Roboto font */
+}
+
+/* Apply the font to all elements */
+* {
+    font-family: var(--font-family);
+}

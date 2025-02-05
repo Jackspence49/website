@@ -6,7 +6,7 @@
 
 .navbar {
     background-color: var(--navbar-bg-color);
-    overflow: hidden;
+    overflow: hidden; 
     height: 70px; /* Typical height for a navbar */
     display: flex;
     justify-content: space-around;
@@ -31,9 +31,17 @@
 }
 
 .navbar li:hover{ 
-    background-color: var(--navbar-hover-bg-color); /* Slightly lighter dark blue */
     cursor: pointer;
 }
+
+.navbar a {
+    color: var(--navbar-text-color); /* Light grey text */
+    text-decoration: none; /* Remove underline */
+}
+
+ .navbar a:hover {
+    text-decoration: none; 
+} 
 
 .navbar ul {
     display: flex;

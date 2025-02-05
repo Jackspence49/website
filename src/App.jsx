@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, useRoutes } from 'react-router-dom';
 import Navbar from './Component/Navbar/Navbar';
 import Footer from './Component/Footer/Footer';
-import TheApp from './Pages/TheApp';
+import TheApp from './Pages/theApp';
 import AboutUs from './Pages/AboutUs';
 import HomePage from './Pages/HomePage';
 import BusinessSolution from './Pages/BusinessSolution';
+import './index.css';
 
 // Define Routes inside useRoutes
 const SiteRoutes = () => {

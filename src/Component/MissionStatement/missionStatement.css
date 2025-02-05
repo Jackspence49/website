@@ -1,0 +1,53 @@
+:root {
+    --blue: #0056b3;
+    --white-tan: #f9f9f9;
+    --grey: #808080;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.missionStatement {
+    background-color: var(--white-tan);
+    text-align: center;
+    padding: 20px 10%;
+}
+
+.missionStatement h2 {
+    font-size: 2rem;
+    color: var(--blue);
+    margin-bottom: 15px;
+}
+
+.missionStatement p {
+    font-size: 1.5rem;
+    color: var(--grey);
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .missionStatement {
+        padding: 20px 15%;
+    }
+
+    .missionStatement h2 {
+        font-size: 2.5rem;
+    }
+
+    .missionStatement p {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .missionStatement h2 {
+        font-size: 3rem;
+    }
+
+    .missionStatement p {
+        font-size: 1.5rem;
+    }
+}
+

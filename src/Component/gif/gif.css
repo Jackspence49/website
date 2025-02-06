@@ -1,0 +1,43 @@
+.gif-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Add background color */
+}
+
+.gif-container img {
+    display: block;
+    width: 40%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.gif-container .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem; /* Base font size */
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .gif-container img {
+        width: 60%; /* Increase image size on smaller screens */
+    }
+    .gif-container .overlay-text {
+        font-size: 2.5rem; /* Increase font size on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gif-container img {
+        width: 80%; /* Further increase image size on very small screens */
+    }
+    .gif-container .overlay-text {
+        font-size: 2rem; /* Further increase font size on very small screens */
+    }
+}
+

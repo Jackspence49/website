@@ -9,3 +9,10 @@
 * {
     font-family: var(--font-family);
 }
+
+/* Ensures the body allows scrolling */
+body {
+    overflow: auto; /* or 'scroll' to always show scrollbars */
+    margin: 0; /* Prevent default body margin */
+    padding: 0;
+  }

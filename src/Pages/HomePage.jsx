@@ -1,11 +1,11 @@
+import Gif from "../Component/gif/gif";
 import MissionStatement from "../Component/MissionStatement/MissionStatement";
-import "./HomePage.css";
 
 const HomePage = () => {
     return (
         <>
-            <MissionStatement />
-        </>
+            <Gif />
+            <MissionStatement />        </>
     );
 };
 
